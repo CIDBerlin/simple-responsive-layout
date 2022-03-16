@@ -1,26 +1,77 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Styles
+import styled from 'styled-components';
 
-function App() {
+// Components
+import {Navbar} from "./components/navbar/Navbar";
+import {Promo} from "./components/promo/Promo";
+import {Features} from "./components/features/Features";
+import {Contents} from "./components/contents/Contents";
+import {Gallery} from "./components/gallery/Gallery";
+import {Partners} from "./components/partners/Partners";
+import {Testimonials} from "./components/testimonials/Testimonials";
+import {Fonts} from "./components/fonts/Fonts";
+import {Footer} from "./components/footer/Footer";
+
+export const App = ():JSX.Element => {
+
+    const Wrapper = styled.div`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1536px) {
+        max-width: 1536px;
+      }
+      @media (max-width: 1280px) {
+        max-width: 1280px;
+      }
+      @media (max-width: 1024px) {
+        max-width: 1024px;
+      }
+      @media (max-width: 768px) {
+        max-width: 768px;
+      }
+      @media (max-width: 640px) {
+        max-width: 640px;
+      }
+    `
+    const Block = styled.div({
+        position: 'relative',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        padding: '50px 0',
+        margin: '0 0 100px 0'
+    })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Wrapper>
+          <Navbar />
+          <Block>
+              <Promo />
+          </Block>
+          <Block>
+              <Features />
+          </Block>
+          <Block>
+              <Contents />
+          </Block>
+          <Block>
+              <Gallery />
+          </Block>
+          <Block>
+              <Partners />
+          </Block>
+          <Block>
+              <Testimonials />
+          </Block>
+          <Block>
+              <Fonts />
+          </Block>
+          <Block>
+              <Footer />
+          </Block>
+      </Wrapper>
+  )
 }
-
-export default App;

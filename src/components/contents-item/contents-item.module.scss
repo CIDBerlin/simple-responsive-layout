@@ -1,0 +1,115 @@
+.contentsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 476px;
+  height: 620px;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D3;
+  box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 40px 0;
+  &__title {
+    padding: 10px;
+    font-weight: 500;
+  }
+  &__desc {
+    width: 271px;
+    padding: 10px;
+    line-height: 24px;
+    color: #5C5C5C;
+    text-align: center;
+  }
+  &__image {
+    display: flex;
+    width: 379px;
+    height: 276px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 1024px) {
+      width: 297px;
+      height: 174px;
+    }
+    @media (max-width: 640px) {
+      width: 280px;
+      height: 204px;
+    }
+  }
+  &:first-child {
+    margin: 0 33px 0 0;
+  }
+  @media (max-width: 1024px) {
+    width: 398px;
+    &:first-child {
+      margin: 0 0 33px 0;
+    }
+  }
+  @media (max-width: 640px) {
+    width: 90%;
+  }
+}
+
+.laptop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 405px;
+  height: 226px;
+  @media (max-width: 1024px) {
+    width: 297px;
+    height: 174px;
+  }
+  &__screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 215px;
+    background-color: #000000;
+    border: 4px solid #9FA2A5;
+    box-sizing: border-box;
+    border-radius: 4.5px 4.5px 0 0;
+    @media (max-width: 1024px) {
+      width: 242px;
+      height: 167px;
+    }
+    &__image {
+      display: flex;
+      width: 312px;
+      height: 195px;
+      @media (max-width: 1024px) {
+        width: 228px;
+        height: 150px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__keyboard {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 13px;
+    bottom: 0;
+    &__header {
+      width: 100%;
+      height: 8px;
+      background: #D8D8D8;
+    }
+    &__footer {
+      width: 100%;
+      height: 4px;
+      border-radius: 0 0 4px 4px;
+      background: #9FA2A5;
+    }
+  }
+}

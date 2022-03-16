@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin: 35px 0;
+  &__title {
+    max-width: 730px;
+    font-size: 80px;
+    line-height: 88px;
+    text-align: center;
+    margin: 0 0 17px 0;
+    color: #fff;
+    @media (max-width: 640px) {
+      font-size: 52px;
+      line-height: 62px;
+    }
+  }
+  &__desc {
+    font-family: 'Roboto Light', sans-serif;
+    max-width: 602px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+  }
+  @media (max-width: 640px) {
+    width: 80%;
+    padding: 0;
+  }
+}

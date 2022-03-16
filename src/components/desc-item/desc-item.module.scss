@@ -1,0 +1,29 @@
+.desc {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 25px 0;
+  &__title {
+    font-family: 'Roboto Medium', sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &__icon {
+      display: flex;
+      width: 41px;
+      height: 41px;
+      margin: 0 10px 0 0;
+    }
+    &__text {
+      padding: 10px 0;
+    }
+  }
+  &__more {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    color: #fff;
+  }
+  &:last-child {
+    margin: 0;
+  }
+}
