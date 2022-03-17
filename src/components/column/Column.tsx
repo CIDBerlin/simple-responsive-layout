@@ -8,7 +8,7 @@ interface ColumnProps {
 
 export const Column = ({title, content}: ColumnProps):JSX.Element => {
 
-    const contentElements = content.map(item => <div className={styles.column__item}>{item}</div>)
+    const contentElements = content.map((item, index) => <div key={index} className={styles.column__item}>{item}</div>)
 
     return (
         <div className={styles.column}>

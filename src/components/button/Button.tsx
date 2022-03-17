@@ -15,6 +15,7 @@ export const Button = ({content, filled}: ButtonProps):JSX.Element => {
       transition: background-color 0.4s linear;
       background-color: ${filled ? '#4452FE' : 'transparent'};
       border: ${filled ? 'none' : '1px solid #fff'};
+      cursor: pointer;
       &:hover {
         background-color: ${filled ? '#7a84ff' : '#7c7c7c'};
       }

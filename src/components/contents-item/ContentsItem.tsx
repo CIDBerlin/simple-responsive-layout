@@ -21,8 +21,8 @@ export const ContentsItem = ({title, desc, button, image, variable}: ContentsIte
                         </div>
                     </div>
                     <div className={styles.laptop__keyboard}>
-                        <div className={styles.laptop__keyboard__header}></div>
-                        <div className={styles.laptop__keyboard__footer}></div>
+                        <div className={styles.laptop__keyboard__header} />
+                        <div className={styles.laptop__keyboard__footer} />
                     </div>
                 </div>
             )
